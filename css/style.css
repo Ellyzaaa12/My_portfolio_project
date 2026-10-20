@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #222222;
+    line-height: 1.5;
+}
+
+.site-header {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.brand-title h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 3px;
+}
+
+.brand-title p {
+    font-size: 13px;
+    color: #ff5722;
+}
+
+.top-nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.top-nav a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.top-nav a:hover {
+    color: #00e5ff;
+    text-decoration: underline;
+}
+
+.profile-header {
+    background-color: #161616;
+    text-align: center;
+    padding: 30px;
+    border-bottom: 1px solid #333;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    object-fit: cover;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.content h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #111111;
+    font-weight: bold;
+}
+
+.section {
+    margin-bottom: 35px;
+}
+
+.welcome-text {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.skills-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.skills-list li {
+    margin-bottom: 5px;
+}
+
+.portfolio-title {
+    text-align: center;
+    color: #ff5722 !important;
+    margin-bottom: 25px;
+}
+
+.portfolio-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.project-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e0e0e0;
+    padding: 25px 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    border-color: #00e5ff;
+}
+
+.project-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #00e676; 
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.project-card h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111111;
+    margin-bottom: 5px;
+}
+
+.project-name {
+    font-size: 14px;
+    font-weight: bold;
+    color: #111111;
+    margin-bottom: 5px;
+}
+
+.project-description {
+    font-size: 12px;
+    color: #555555;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #222222;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #fff;
+    color: #333;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #666;
+}
+
+select.form-control {
+    color: #777;
+}
+
+textarea.form-control {
+    resize: vertical;
+    height: 100px;
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-submit:hover {
+    background-color: #333333;
+}
+
+footer {
+    background-color: #181818;
+    color: #aaaaaa;
+    text-align: center;
+    padding: 25px 10px;
+    font-size: 12px;
+    border-top: 1px solid #282828;
+}
+
+footer p {
+    margin-bottom: 4px;
+}
+
+footer .date {
+    color: #ff5722;
+}
+
+@media (max-width: 768px) {
+    .site-header {
+        padding: 15px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .top-nav {
+        gap: 15px;
+        margin-top: 5px;
+    }
+
+    .portfolio-cards-container {
+        grid-template-columns: 1fr; 
+    }
+}
